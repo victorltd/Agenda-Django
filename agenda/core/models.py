@@ -18,3 +18,7 @@ class Evento(models.Model):
     def __str__(self):
         return self.titulo
 
+    #mostra a hora em um formato mais amigavel, uso ela em agenda.html
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y %H:%M Hrs')
+
