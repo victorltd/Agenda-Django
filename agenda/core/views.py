@@ -1,8 +1,14 @@
 from urllib import response
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from core.models import Evento
 
 # Create your views here.
+
+'''
+#para redirecionar o index para a pagina que eu quero
+def index(request):
+    return redirect('/agenda/')
+'''
 
 def lista_eventos(request):
     usuario=request.user
